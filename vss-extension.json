@@ -1,0 +1,41 @@
+{
+  "manifestVersion": 1,
+  "id": "fls-time-log-extension",
+  "publisher": "AntonMochalin",
+  "version": "0.0.4",
+  "name": "FLS Time Log Extension",
+  "description": "FLS Time Log Extension",
+  "public": false,
+  "categories": ["Azure Repos"],
+  "baseUri": "https://127.0.0.1:8080",
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],
+    "contributions": [
+        {
+            "id": "time-work-tab",
+            "type": "ms.vss-work-web.work-item-form-page",
+            "description": "Work item tab for time log",
+            "targets": [
+                "ms.vss-work-web.work-item-form"
+            ],
+            "properties": {
+                "name": "Time Log",
+                "uri": "index.html"
+            }
+        }
+    ],
+    "files": [
+        {
+            "path": "public/index.html",
+            "addressable": true
+        },
+        {
+            "path": "node_modules/vss-web-extension-sdk/lib",
+            "addressable": true,
+            "packagePath": "lib"
+        }
+    ]
+}

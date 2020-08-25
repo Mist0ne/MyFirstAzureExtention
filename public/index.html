@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <script src="VSS.SDK.min.js"></script>
+    <title>React App</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/javascript">
+      VSS.init({
+        explicitNotifyLoaded: true,
+        usePlatformScripts: true
+      });
+      VSS.notifyLoadSucceeded();
+    </script>
+  </body>
+</html>
